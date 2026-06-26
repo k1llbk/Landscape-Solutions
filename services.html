@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Services | Landscape Solutions</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
+line-height:1.7;
+}
+
+/* HERO */
+
+.hero{
+
+height:60vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+
+text-align:center;
+
+background:
+linear-gradient(
+rgba(0,0,0,.65),
+rgba(0,0,0,.65)
+),
+url("images/services-banner.jpg");
+
+background-size:cover;
+background-position:center;
+
+color:white;
+
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.2rem;
+max-width:700px;
+}
+
+/* NAVBAR */
+
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.8);
+backdrop-filter:blur(10px);
+z-index:999;
+}
+
+.logo{
+color:white;
+font-size:1.6rem;
+font-weight:700;
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+}
+
+/* SERVICES */
+
+.services{
+padding:100px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:3rem;
+margin-bottom:60px;
+color:#1B5E20;
+}
+
+.services-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(350px,1fr));
+
+gap:30px;
+
+}
+
+.service-card{
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.1);
+
+transition:.4s;
+
+}
+
+.service-card:hover{
+
+transform:
+translateY(-10px);
+
+}
+
+.service-card img{
+
+width:100%;
+
+height:250px;
+
+object-fit:cover;
+
+}
+
+.service-content{
+
+padding:30px;
+
+}
+
+.service-content h3{
+
+color:#1B5E20;
+
+margin-bottom:15px;
+
+}
+
+.service-content ul{
+
+padding-left:20px;
+
+margin-top:15px;
+
+}
+
+/* PROCESS */
+
+.process{
+
+padding:100px 8%;
+
+background:white;
+
+}
+
+.process-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+.step{
+
+text-align:center;
+
+padding:40px;
+
+background:#f8f8f8;
+
+border-radius:20px;
+
+}
+
+.step-number{
+
+width:70px;
+height:70px;
+
+background:#1B5E20;
+
+color:white;
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+margin:auto;
+
+font-size:1.5rem;
+font-weight:bold;
+
+margin-bottom:20px;
+
+}
+
+/* CTA */
+
+.cta{
+
+padding:100px 8%;
+
+text-align:center;
+
+background:
+linear-gradient(
+135deg,
+#1B5E20,
+#2E7D32
+);
+
+color:white;
+
+}
+
+.cta h2{
+
+font-size:3rem;
+
+margin-bottom:20px;
+
+}
+
+.cta a{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:white;
+
+color:#1B5E20;
+
+text-decoration:none;
+
+border-radius:50px;
+
+font-weight:600;
+
+margin-top:20px;
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.section-title{
+font-size:2rem;
+}
+
+.nav-links{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+Landscape Solutions
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Our Services</h1>
+
+<p>
+Professional landscaping solutions designed to enhance the beauty, functionality and value of outdoor spaces.
+</p>
+
+</section>
+
+<section class="services">
+
+<h2 class="section-title">
+What We Offer
+</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+
+<img src="images/service1.jpg">
+
+<div class="service-content">
+
+<h3>Landscape Design</h3>
+
+<p>
+Creative and functional landscape designs tailored to your property.
+</p>
+
+<ul>
+<li>Site Planning</li>
+<li>Plant Selection</li>
+<li>3D Landscape Concepts</li>
+<li>Garden Layout Design</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="service-card">
+
+<img src="images/service2.jpg">
+
+<div class="service-content">
+
+<h3>Irrigation Systems</h3>
+
+<p>
+Efficient irrigation solutions designed to maximize water conservation.
+</p>
+
+<ul>
+<li>Sprinkler Systems</li>
+<li>Drip Irrigation</li>
+<li>System Maintenance</li>
+<li>Water Management</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="service-card">
+
+<img src="images/service3.jpg">
+
+<div class="service-content">
+
+<h3>Garden Maintenance</h3>
+
+<p>
+Keeping landscapes healthy, beautiful and professionally maintained.
+</p>
+
+<ul>
+<li>Lawn Care</li>
+<li>Pruning</li>
+<li>Weed Control</li>
+<li>Fertilization</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="service-card">
+
+<img src="images/service4.jpg">
+
+<div class="service-content">
+
+<h3>Commercial Landscaping</h3>
+
+<p>
+Comprehensive landscaping services for commercial properties.
+</p>
+
+<ul>
+<li>Corporate Grounds</li>
+<li>Shopping Centres</li>
+<li>Business Parks</li>
+<li>Property Maintenance</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="service-card">
+
+<img src="images/service5.jpg">
+
+<div class="service-content">
+
+<h3>Hardscaping</h3>
+
+<p>
+Enhancing outdoor spaces with durable and attractive structures.
+</p>
+
+<ul>
+<li>Paving</li>
+<li>Walkways</li>
+<li>Retaining Walls</li>
+<li>Outdoor Features</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="service-card">
+
+<img src="images/service6.jpg">
+
+<div class="service-content">
+
+<h3>Golf Course Maintenance</h3>
+
+<p>
+Professional turf management and grounds maintenance.
+</p>
+
+<ul>
+<li>Turf Care</li>
+<li>Fairway Maintenance</li>
+<li>Irrigation Systems</li>
+<li>Course Enhancements</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="process">
+
+<h2 class="section-title">
+Our Process
+</h2>
+
+<div class="process-grid">
+
+<div class="step">
+
+<div class="step-number">1</div>
+
+<h3>Consultation</h3>
+
+<p>
+Understanding your needs and project goals.
+</p>
+
+</div>
+
+<div class="step">
+
+<div class="step-number">2</div>
+
+<h3>Design</h3>
+
+<p>
+Creating customized landscaping solutions.
+</p>
+
+</div>
+
+<div class="step">
+
+<div class="step-number">3</div>
+
+<h3>Implementation</h3>
+
+<p>
+Professional installation and construction.
+</p>
+
+</div>
+
+<div class="step">
+
+<div class="step-number">4</div>
+
+<h3>Maintenance</h3>
+
+<p>
+Ensuring long-term beauty and performance.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>
+Ready To Start Your Project?
+</h2>
+
+<p>
+Contact Landscape Solutions today for a professional consultation.
+</p>
+
+<a href="contact.html">
+Request A Quote
+</a>
+
+</section>
+
+</body>
+</html>
+
