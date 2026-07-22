@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Landscape Solutions | Equipment</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+<!-- SCROLL PROGRESS BAR -->
+<div id="progressBar"></div>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        Landscape Solutions
+    </div>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="services.html">Services</a></li>
+
+        <li><a href="projects.html">Projects</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+    <button id="darkModeToggle" class="btn">
+        🌙
+    </button>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content reveal">
+
+        <h1>
+            Our Equipment
+        </h1>
+
+        <p>
+            Industry-standard machinery and tools to deliver professional landscaping
+            and grounds maintenance across Botswana.
+        </p>
+
+        <a href="contact.html" class="btn">
+            Request Equipment Quote
+        </a>
+
+    </div>
+
+</section>
+
+<!-- EQUIPMENT OVERVIEW -->
+
+<section class="container reveal" style="padding:80px 0;">
+
+    <h2>Available Equipment</h2>
+
+    <p>
+        We maintain a modern fleet of well-serviced machinery for projects of any scale — from residential gardens
+        to large commercial and golf course contracts.
+    </p>
+
+    <div class="services-grid" style="margin-top:30px;">
+
+        <div class="service-card">
+            <h3>Riding Mowers</h3>
+            <p>Heavy-duty mowers for fast, even turf cuts on large properties.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Compact Excavators</h3>
+            <p>Precision digging and grading for planting beds, irrigation trenches and hardscape foundations.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Tractors &amp; Attachments</h3>
+            <p>Tractors equipped with trailers, loaders and backhoes for versatile on-site work.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Irrigation Pumps</h3>
+            <p>High-efficiency pumps and controllers for reliable water management.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Aerators &amp; Dethatchers</h3>
+            <p>Specialised turf equipment to improve soil health and playing surfaces.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Sprayers &amp; Spreaders</h3>
+            <p>For targeted treatments and fertiliser applications across landscapes.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EQUIPMENT GALLERY -->
+
+<section class="container reveal" style="padding-bottom:80px;">
+
+    <h2 style="text-align:center;">
+        Equipment Gallery
+    </h2>
+
+    <div class="project-gallery" style="margin-top:30px;">
+
+        <div class="project-card" data-category="mower">
+
+            <img src="images/equipment1.jpg" alt="Riding mower" class="lightbox-image">
+
+            <div class="project-content">
+
+                <h3>
+                    Riding Mower — Model A
+                </h3>
+
+                <p>
+                    Powerful engine, 48" cutting deck. Ideal for large residential lawns.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="project-card" data-category="excavator">
+
+            <img src="images/equipment2.jpg" alt="Compact excavator" class="lightbox-image">
+
+            <div class="project-content">
+
+                <h3>
+                    Compact Excavator — 2.5t
+                </h3>
+
+                <p>
+                    Compact footprint for tight sites with excellent digging performance.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="project-card" data-category="tractor">
+
+            <img src="images/equipment3.jpg" alt="Tractor with attachments" class="lightbox-image">
+
+            <div class="project-content">
+
+                <h3>
+                    Tractor &amp; Loader
+                </h3>
+
+                <p>
+                    Multi-purpose tractor with loader and trailer for materials handling.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="project-card" data-category="irrigation">
+
+            <img src="images/equipment4.jpg" alt="Irrigation pump" class="lightbox-image">
+
+            <div class="project-content">
+
+                <h3>
+                    Irrigation Pump Unit
+                </h3>
+
+                <p>
+                    Portable pump sets and controllers for irrigation installations and repairs.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EQUIPMENT SAFETY & MAINTENANCE -->
+
+<section class="container reveal" style="padding-bottom:80px;">
+
+    <h2 style="text-align:center;">Safety &amp; Maintenance</h2>
+
+    <p style="text-align:center; max-width:900px; margin:20px auto;">
+        All equipment is inspected and maintained regularly by our certified technicians. Operators are trained
+        and insured — we follow strict safety procedures on every job.
+    </p>
+
+</section>
+
+<!-- LIGHTBOX -->
+
+<div id="lightbox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.9); justify-content:center; align-items:center; z-index:9999;">
+
+    <span id="closeLightbox" style="position:absolute; top:30px; right:40px; font-size:40px; color:white; cursor:pointer;">×</span>
+
+    <img id="lightboxImg" style="max-width:90%; max-height:90%;">
+
+</div>
+
+<!-- BACK TO TOP -->
+
+<button id="backToTop">↑</button>
+
+<!-- FOOTER -->
+
+<footer style="text-align:center;padding:50px;">
+
+    <h3>Landscape Solutions</h3>
+
+    <p>
+        Professional Landscaping &amp; Irrigation Services
+    </p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
