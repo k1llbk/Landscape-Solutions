@@ -8,463 +8,44 @@
 
 <title>Contact Us | Landscape Solutions</title>
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:#f5f5f5;
-color:#333;
-line-height:1.7;
-}
-
-/* HERO */
-
-.contact-hero{
-
-height:60vh;
-
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-
-text-align:center;
-
-background:
-linear-gradient(
-rgba(0,0,0,.65),
-rgba(0,0,0,.65)
-),
-url("images/contact-banner.jpg");
-
-background-size:cover;
-background-position:center;
-
-color:white;
-
-}
-
-.contact-hero h1{
-
-font-size:4rem;
-
-margin-bottom:20px;
-
-}
-
-.contact-hero p{
-
-font-size:1.2rem;
-
-}
-
-/* CONTACT SECTION */
-
-.contact-section{
-
-padding:100px 8%;
-
-}
-
-.contact-container{
-
-display:grid;
-
-grid-template-columns:
-1fr 1fr;
-
-gap:50px;
-
-max-width:1400px;
-
-margin:auto;
-
-}
-
-/* LEFT SIDE */
-
-.contact-info{
-
-background:white;
-
-padding:50px;
-
-border-radius:20px;
-
-box-shadow:
-0 15px 35px rgba(0,0,0,.1);
-
-}
-
-.contact-info h2{
-
-color:#1B5E20;
-
-margin-bottom:20px;
-
-}
-
-.info-box{
-
-margin-bottom:30px;
-
-}
-
-.info-box h3{
-
-margin-bottom:10px;
-
-color:#1B5E20;
-
-}
-
-/* FORM */
-
-.contact-form{
-
-background:white;
-
-padding:50px;
-
-border-radius:20px;
-
-box-shadow:
-0 15px 35px rgba(0,0,0,.1);
-
-}
-
-.contact-form h2{
-
-color:#1B5E20;
-
-margin-bottom:25px;
-
-}
-
-.form-group{
-
-margin-bottom:20px;
-
-}
-
-input,
-textarea{
-
-width:100%;
-
-padding:15px;
-
-border:2px solid #ddd;
-
-border-radius:10px;
-
-outline:none;
-
-transition:.3s;
-
-}
-
-input:focus,
-textarea:focus{
-
-border-color:#2E7D32;
-
-}
-
-button{
-
-width:100%;
-
-padding:15px;
-
-background:#1B5E20;
-
-color:white;
-
-border:none;
-
-border-radius:10px;
-
-cursor:pointer;
-
-font-size:1rem;
-
-font-weight:600;
-
-transition:.3s;
-
-}
-
-button:hover{
-
-background:#2E7D32;
-
-transform:translateY(-3px);
-
-}
-
-/* MAP */
-
-.map-section{
-
-padding:0 8% 100px;
-
-}
-
-.map-container{
-
-overflow:hidden;
-
-border-radius:20px;
-
-box-shadow:
-0 15px 35px rgba(0,0,0,.1);
-
-}
-
-/* CTA */
-
-.cta{
-
-padding:100px 8%;
-
-background:
-linear-gradient(
-135deg,
-#1B5E20,
-#2E7D32
-);
-
-text-align:center;
-
-color:white;
-
-}
-
-.cta h2{
-
-font-size:3rem;
-
-margin-bottom:20px;
-
-}
-
-.cta p{
-
-margin-bottom:30px;
-
-}
-
-.cta a{
-
-display:inline-block;
-
-padding:15px 35px;
-
-background:white;
-
-color:#1B5E20;
-
-text-decoration:none;
-
-font-weight:600;
-
-border-radius:50px;
-
-}
-
-/* FOOTER */
-
-footer{
-
-background:#121212;
-
-color:white;
-
-text-align:center;
-
-padding:40px;
-
-}
-/* NAVBAR */
-
-.navbar{
-
-    position:fixed;
-
-    top:0;
-    left:0;
-
-    width:100%;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:20px 8%;
-
-    background:rgba(0,0,0,.85);
-
-    backdrop-filter:blur(10px);
-
-    z-index:999;
-
-}
-
-.logo a{
-
-    color:white;
-
-    text-decoration:none;
-
-    font-size:1.6rem;
-
-    font-weight:700;
-
-}
-
-.nav-links{
-
-    display:flex;
-
-    list-style:none;
-
-    gap:30px;
-
-}
-
-.nav-links a{
-
-    color:white;
-
-    text-decoration:none;
-
-    font-weight:500;
-
-    transition:.3s;
-
-}
-
-.nav-links a:hover{
-
-    color:#81C784;
-
-}
-
-/* Mobile */
-
-@media(max-width:768px){
-
-    .navbar{
-
-        flex-direction:column;
-
-        gap:15px;
-
-    }
-
-    .nav-links{
-
-        flex-wrap:wrap;
-
-        justify-content:center;
-
-        gap:15px;
-
-    }
-
-}
-/* WHATSAPP BUTTON */
-
-.whatsapp-btn{
-
-    position:fixed;
-
-    bottom:25px;
-    right:25px;
-
-    width:70px;
-    height:70px;
-
-    background:#25D366;
-
-    border-radius:50%;
-
-    display:flex;
-
-    justify-content:center;
-    align-items:center;
-
-    text-decoration:none;
-
-    box-shadow:
-    0 10px 25px rgba(0,0,0,.25);
-
-    z-index:9999;
-
-    transition:.3s;
-
-}
-
-.whatsapp-btn:hover{
-
-    transform:
-    scale(1.1);
-
-}
-
-.whatsapp-icon{
-
-    font-size:2rem;
-
-    color:white;
-
-}
-</style>
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-   <nav class="navbar">
 
-    <div class="logo">
-        <a href="index.html">Landscape Solutions</a>
-    </div>
+<nav class="navbar">
 
-    <ul class="nav-links">
+<div class="logo">
+Landscape Solutions
+</div>
 
-        <li><a href="index.html">Home</a></li>
+<ul class="nav-links">
 
-        <li><a href="services.html">Services</a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="equipments.html">Equipments</a></li>
 
-        <li><a href="projects.html">Projects</a></li>
+</ul>
 
-        <li><a href="about.html">About</a></li>
+<button id="darkModeToggle" class="btn">
+    🌙
+</button>
 
-        <li><a href="contact.html">Contact</a></li>
+</nav>
 
-    </ul>
-
-</nav> 
 <a href="https://wa.me/26775551769?text=Hello%20Landscape%20Solutions,%20I%20would%20like%20to%20request%20a%20quotation."
    class="whatsapp-btn"
-   target="_blank">
+   target="_blank" style="position:fixed; bottom:25px; right:25px; width:70px; height:70px; background:#25D366; border-radius:50%; display:flex; justify-content:center; align-items:center; text-decoration:none; box-shadow:0 10px 25px rgba(0,0,0,.25); z-index:9999; transition:.3s;">
 
-    <span class="whatsapp-icon">💬</span>
+    <span style="font-size:2rem; color:white;">💬</span>
 
 </a>
 
-<!-- HERO -->
-
-<section class="contact-hero">
+<section class="page-hero" style="background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url('images/contact-banner.jpg');">
 
 <h1>Contact Us</h1>
 
@@ -474,21 +55,17 @@ Let's Discuss Your Next Landscaping Project
 
 </section>
 
-<!-- CONTACT -->
+<section class="container" style="padding:100px 0;">
 
-<section class="contact-section">
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:50px; max-width:1400px; margin:auto;">
 
-<div class="contact-container">
-
-<!-- LEFT -->
-
-<div class="contact-info">
+<div style="background:white; padding:50px; border-radius:20px; box-shadow:var(--shadow);">
 
 <h2>Get In Touch</h2>
 
-<div class="info-box">
+<div style="margin-bottom:30px;">
 
-<h3>📍 Address</h3>
+<h3 style="margin-bottom:10px; color:var(--primary);">📍 Address</h3>
 
 <p>
 Gaborone, Botswana
@@ -496,9 +73,9 @@ Gaborone, Botswana
 
 </div>
 
-<div class="info-box">
+<div style="margin-bottom:30px;">
 
-<h3>📞 Phone</h3>
+<h3 style="margin-bottom:10px; color:var(--primary);">📞 Phone</h3>
 
 <p>
 +267 75 551 769
@@ -506,9 +83,9 @@ Gaborone, Botswana
 
 </div>
 
-<div class="info-box">
+<div style="margin-bottom:30px;">
 
-<h3>✉ Email</h3>
+<h3 style="margin-bottom:10px; color:var(--primary);">✉ Email</h3>
 
 <p>
 info@landscapesolutions.co.bw
@@ -516,9 +93,9 @@ info@landscapesolutions.co.bw
 
 </div>
 
-<div class="info-box">
+<div style="margin-bottom:30px;">
 
-<h3>🕒 Working Hours</h3>
+<h3 style="margin-bottom:10px; color:var(--primary);">🕒 Working Hours</h3>
 
 <p>
 Monday - Friday
@@ -530,9 +107,7 @@ Monday - Friday
 
 </div>
 
-<!-- RIGHT -->
-
-<div class="contact-form">
+<div style="background:white; padding:50px; border-radius:20px; box-shadow:var(--shadow);">
 
 <h2>Request A Quote</h2>
 
@@ -607,7 +182,7 @@ Characters:
 
 <br>
 
-<button type="submit">
+<button type="submit" class="btn" style="width:100%;">
 
 Send Message
 
@@ -621,11 +196,9 @@ Send Message
 
 </section>
 
-<!-- MAP -->
+<section style="padding:0 8% 100px;">
 
-<section class="map-section">
-
-<div class="map-container">
+<div style="overflow:hidden; border-radius:20px; box-shadow:var(--shadow);">
 
 <iframe
 src="https://maps.google.com/maps?q=Gaborone&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -640,8 +213,6 @@ loading="lazy">
 
 </section>
 
-<!-- CTA -->
-
 <section class="cta">
 
 <h2>
@@ -654,7 +225,7 @@ Contact Landscape Solutions today for a free consultation and quotation.
 
 </p>
 
-<a href="tel:+26775551769">
+<a href="tel:+26775551769" class="btn">
 
 Call Us Today
 
@@ -677,4 +248,3 @@ Professional Landscaping & Irrigation Services
 </body>
 
 </html>
-
