@@ -145,11 +145,9 @@ body{
 .navbar.scrolled{
 .nav-links{
 
-    background:var(--light);
+.navbar.scrolled{
 
-}
-   .nav-links a{
-    color:var(--text);
+    background:rgba(255,255,255,.9);
 
 }
 
