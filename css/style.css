@@ -143,12 +143,13 @@ body{
 }
 
 .navbar.scrolled{
+.nav-links{
 
-    background:rgba(255,255,255,.9);
+    background:var(--light);
 
-    backdrop-filter:blur(10px);
-
-    box-shadow:var(--shadow);
+}
+   .nav-links a{
+    color:var(--text);
 
 }
 
